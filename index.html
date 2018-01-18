@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+        .linksContainer
+        {
+             text-align: right;
+        }
+        .Text
+        {
+            font-size:14px; 
+            font-family:Verdana, Geneva, sans-serif;
+            text-decoration: none;
+        }
+        .Container
+        {
+            text-align: center;
+        }
+        .Container:before
+        {
+            content: '';
+            height: 90%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .centeredContent
+        {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        </style>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <h1>OzanLaflar.com</h1>
+        <div class="Container">
+            <script>
+                var laflar = ['Anana sor, o bilir.', 'Bunu niye anana sormuyorsun delikanlı?', 'Anan da öyle diyodu.', 'Anan da böyle basmıştı butona...'];
+            </script>
+            <p id="demo">Anan da böyle gelmişti...</p>
+            <button 
+            onclick="var laf = laflar[Math.floor(Math.random()*laflar.length)];
+            document.getElementById('demo').innerHTML = laf"
+            class="centeredContent pure-button">Başka bir ozanlaf daha!</button>
+        </div>
+    </body>
+</html>
